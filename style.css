@@ -1,0 +1,53 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background: #004882;
+}
+.box{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+}
+.box select{
+    padding: 10px;
+    width: 240px;
+    height: 50px;
+
+    font-size: 20px;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    border: none;
+
+    background: #0563af;
+    color: #fff;
+
+    appearance: none;
+    outline: none;
+}
+.box::before{
+    content: '\f358';
+    position: absolute;
+
+    font-family: "Font Awesome 5 Free";
+    font-size: 28px;
+    text-align: center;
+
+    top: 0%;
+    right: 0%;
+
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+
+    color: #fff;
+
+    background: #007ce0;
+
+    pointer-events: none;
+}
+.box:hover::before{
+    background: #0472ca;
+}
